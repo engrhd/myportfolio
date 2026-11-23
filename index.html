@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hans Xavier Dy | Mechanical Design &amp; Tooling Engineer</title>
-<meta name="description" content="Licensed Mechanical Engineer with 4 years in manufacturing and tool &amp; die engineering. SOLIDWORKS design, injection mould tooling, jigs and fixtures. Open to relocation to Ireland, the EU, Australia and New Zealand, or remote work. Also offers quantity takeoffs and construction estimating.">
+<meta name="description" content="Certified SOLIDWORKS Associate (CSWA) and Licensed Mechanical Engineer with 4 years in manufacturing and tool &amp; die engineering. SOLIDWORKS design, injection mould tooling, jigs and fixtures. Open to relocation to Ireland, the EU, Australia and New Zealand, or remote work. Also offers quantity takeoffs and construction estimating.">
 
 <!-- Open Graph / Link Preview Tags -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://engrhd.github.io/myportfolio/">
 <meta property="og:title" content="Hans Xavier Dy | Mechanical Design & Tooling Engineer">
-<meta property="og:description" content="Licensed Mechanical Engineer with 4 years in manufacturing and tool & die engineering. SOLIDWORKS design, injection mould tooling, jigs and fixtures. Open to relocation to Ireland, the EU, Australia and New Zealand, or remote work.">
+<meta property="og:description" content="Certified SOLIDWORKS Associate (CSWA) and Licensed Mechanical Engineer with 4 years in manufacturing and tool & die engineering. SOLIDWORKS design, injection mould tooling, jigs and fixtures. Open to relocation to Ireland, the EU, Australia and New Zealand, or remote work.">
 <meta property="og:image" content="https://engrhd.github.io/myportfolio/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Hans Xavier Dy | Mechanical Design & Tooling Engineer">
-<meta name="twitter:description" content="Licensed Mechanical Engineer with 4 years in manufacturing and tool & die engineering. SOLIDWORKS design, injection mould tooling, jigs and fixtures. Open to relocation to Ireland, the EU, Australia and New Zealand, or remote work.">
+<meta name="twitter:description" content="Certified SOLIDWORKS Associate (CSWA) and Licensed Mechanical Engineer with 4 years in manufacturing and tool & die engineering. SOLIDWORKS design, injection mould tooling, jigs and fixtures. Open to relocation to Ireland, the EU, Australia and New Zealand, or remote work.">
 <meta name="twitter:image" content="https://engrhd.github.io/myportfolio/og-image.jpg">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%23111111'/><text x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-size='26' font-weight='800' fill='white' text-anchor='middle'>HD</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -157,6 +157,30 @@
   .hero-strip-item svg{width:20px; height:20px; flex-shrink:0; opacity:.9;}
   .hero-strip-item strong{display:block; font-size:13px; font-weight:700;}
   .hero-strip-item small{display:block; font-size:11px; color:#b7b7b7; margin-top:2px;}
+
+  /* ---------- VERIFIED CREDENTIAL (CSWA) ---------- */
+  .hero-credential{
+    display:inline-flex; align-items:center; gap:14px; margin-top:24px; max-width:100%;
+    padding:11px 18px 11px 11px; border:1px solid var(--linegray); border-radius:14px;
+    background:var(--white); box-shadow:var(--shadow-card);
+    text-decoration:none; color:inherit;
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+  .hero-credential:hover{transform:translateY(-2px); box-shadow:var(--shadow-lift); border-color:var(--black);}
+  .hero-credential:focus-visible{outline:2px solid var(--black); outline-offset:3px;}
+  .hero-credential img{width:48px; height:48px; flex-shrink:0; display:block;}
+  .hero-credential-copy strong{display:block; font-size:13.5px; font-weight:800; line-height:1.3;}
+  .hero-credential-copy span{
+    display:flex; align-items:center; gap:5px; margin-top:3px;
+    font-size:10.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--midgray);
+  }
+  .hero-credential-copy span svg{width:11px; height:11px; flex-shrink:0;}
+  a.cert-card{text-decoration:none; color:inherit;}
+  .cert-verify{
+    display:flex; align-items:center; justify-content:center; gap:5px; margin-top:5px;
+    font-size:10.5px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--black);
+  }
+  .cert-verify svg{width:11px; height:11px; flex-shrink:0;}
 
   /* ---------- TRUST + SOFTWARE ---------- */
   .trust-row{
@@ -453,7 +477,7 @@
   .card.reveal, .project-card.reveal, .why-item.reveal, .tool-card.reveal, .slogo.reveal{transition-duration:.6s;}
 
   @keyframes heroIn{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:none;}}
-  .hero-copy .eyebrow, .hero-copy h1, .hero-copy .lede, .hero-copy .hero-ctas, .hero-copy .hero-meta, .hero-visual, .hero-strip{
+  .hero-copy .eyebrow, .hero-copy h1, .hero-copy .lede, .hero-copy .hero-ctas, .hero-copy .hero-meta, .hero-copy .hero-credential, .hero-visual, .hero-strip{
     opacity:0; animation:heroIn .8s cubic-bezier(.2,.7,.2,1) forwards;
   }
   .hero-copy .eyebrow{animation-delay:.05s;}
@@ -461,6 +485,7 @@
   .hero-copy .lede{animation-delay:.3s;}
   .hero-copy .hero-ctas{animation-delay:.42s;}
   .hero-copy .hero-meta{animation-delay:.52s;}
+  .hero-copy .hero-credential{animation-delay:.58s;}
   .hero-visual{animation-delay:.2s;}
   .hero-strip{animation-delay:.62s;}
 
@@ -476,7 +501,7 @@
 
   @media (prefers-reduced-motion: reduce){
     .reveal{opacity:1; transform:none; transition:none;}
-    .hero-copy .eyebrow, .hero-copy h1, .hero-copy .lede, .hero-copy .hero-ctas, .hero-copy .hero-meta, .hero-visual, .hero-strip{
+    .hero-copy .eyebrow, .hero-copy h1, .hero-copy .lede, .hero-copy .hero-ctas, .hero-copy .hero-meta, .hero-copy .hero-credential, .hero-visual, .hero-strip{
       opacity:1; animation:none;
     }
     .card:hover, .why-item:hover{transform:none;}
@@ -541,6 +566,17 @@
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>Open to relocation: IE · EU · AU · NZ · or remote</span>
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Available Full-Time</span>
         </div>
+
+        <a href="https://www.credly.com/badges/e4e9af88-a671-4999-819b-b289442f8557/public_url" target="_blank" rel="noopener" class="hero-credential">
+          <img src="images/cswa-badge.png" alt="Certified SOLIDWORKS Associate (CSWA) badge issued by Dassault Syst&egrave;mes">
+          <div class="hero-credential-copy">
+            <strong>Certified SOLIDWORKS Associate (CSWA)</strong>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>
+              Verify on Credly
+            </span>
+          </div>
+        </a>
       </div>
 
       <div class="hero-visual">
@@ -933,6 +969,17 @@
     <div class="cert-group">
       <span class="cert-group-label">Mechanical Design &amp; CAD</span>
       <div class="cert-row">
+      <a href="https://www.credly.com/badges/e4e9af88-a671-4999-819b-b289442f8557/public_url" target="_blank" rel="noopener" class="cert-card reveal">
+        <div class="cert-thumb"><img src="images/cswa-certificate.jpg" alt="Certified SOLIDWORKS Associate (CSWA) certificate issued to Hans Xavier Dy by Dassault Syst&egrave;mes"></div>
+        <div class="cert-body">
+          <h4>Certified SOLIDWORKS Associate (CSWA)</h4>
+          <div class="cert-issuer">Dassault Syst&egrave;mes</div>
+          <div class="cert-verify">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            Verify on Credly
+          </div>
+        </div>
+      </a>
       <div class="cert-card reveal" onclick="openCertLightbox(this)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'){openCertLightbox(this)}">
         <div class="cert-thumb"><img src="images/289fcc7e2612.jpg" style="object-fit:cover; object-position:center;" alt="Computer Aided Design System using SolidWorks and AutoCAD certificate"></div>
         <div class="cert-body">
