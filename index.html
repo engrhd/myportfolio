@@ -175,12 +175,6 @@
     font-size:10.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--midgray);
   }
   .hero-credential-copy span svg{width:11px; height:11px; flex-shrink:0;}
-  a.cert-card{text-decoration:none; color:inherit;}
-  .cert-verify{
-    display:flex; align-items:center; justify-content:center; gap:5px; margin-top:5px;
-    font-size:10.5px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--black);
-  }
-  .cert-verify svg{width:11px; height:11px; flex-shrink:0;}
 
   /* ---------- TRUST + SOFTWARE ---------- */
   .trust-row{
@@ -969,17 +963,17 @@
     <div class="cert-group">
       <span class="cert-group-label">Mechanical Design &amp; CAD</span>
       <div class="cert-row">
-      <a href="https://www.credly.com/badges/e4e9af88-a671-4999-819b-b289442f8557/public_url" target="_blank" rel="noopener" class="cert-card reveal">
+      <div class="cert-card reveal" onclick="openCertLightbox(this)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'){openCertLightbox(this)}">
         <div class="cert-thumb"><img src="images/cswa-certificate.jpg" alt="Certified SOLIDWORKS Associate (CSWA) certificate issued to Hans Xavier Dy by Dassault Syst&egrave;mes"></div>
         <div class="cert-body">
           <h4>Certified SOLIDWORKS Associate (CSWA)</h4>
           <div class="cert-issuer">Dassault Syst&egrave;mes</div>
-          <div class="cert-verify">
+          <p>SOLIDWORKS Design Associate certification awarded by Dassault Syst&egrave;mes, certificate ID C-M7GF6B9CNJ.</p>
+          <div class="cert-link">View Certificate
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
-            Verify on Credly
           </div>
         </div>
-      </a>
+      </div>
       <div class="cert-card reveal" onclick="openCertLightbox(this)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'){openCertLightbox(this)}">
         <div class="cert-thumb"><img src="images/289fcc7e2612.jpg" style="object-fit:cover; object-position:center;" alt="Computer Aided Design System using SolidWorks and AutoCAD certificate"></div>
         <div class="cert-body">
